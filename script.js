@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Replace this placeholder with your WhatsApp number in international format,
   // digits only, with no plus sign. Example Nigeria: 2348012345678.
-  const WHATSAPP_NUMBER = "234XXXXXXXXXX";
+  const WHATSAPP_NUMBER = "2348054721850";
   document.querySelectorAll("[data-whatsapp]").forEach(link => {
     link.href = `https://wa.me/${WHATSAPP_NUMBER}`;
     link.target = "_blank";
