@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // Add your X profile URL here when ready.
-  const X_PROFILE_URL = "";
+  const X_PROFILE_URL = "https://x.com/tomithaeditor?s=11";
   document.querySelectorAll("[data-social-x]").forEach(link => {
     if (X_PROFILE_URL) {
       link.href = X_PROFILE_URL;
