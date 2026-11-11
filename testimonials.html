@@ -1,16 +1,185 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Testimonials — Tomi</title>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"><script src="script.js" defer></script>
-<link rel="icon" type="image/x-icon" href="assets/favicon.ico">
-<link rel="icon" type="image/png" sizes="512x512" href="assets/favicon.png">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Feedback from creators and clients who have worked with Tomi tha creator.">
+  <title>Testimonials | Tomi tha creator</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Page-specific styling; the rest of the site uses the existing style.css -->
+  <style>
+    .testimonials-page .testimonial-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .testimonials-page .testimonial-card {
+      min-height: 0;
+      padding: 30px;
+      background: #e7e6df;
+    }
+
+    .testimonials-page .testimonial-card > p {
+      font: 400 16px/1.65 var(--body);
+      letter-spacing: 0;
+      margin: 18px 0 34px;
+      max-width: 650px;
+    }
+
+    .testimonials-page .quote-mark {
+      font-size: 52px;
+      line-height: .8;
+    }
+
+    .testimonials-page .testimonial-person {
+      flex-direction: row;
+      align-items: center;
+      gap: 13px;
+      border-top: 1px solid rgba(17,17,17,.14);
+      padding-top: 18px;
+    }
+
+    .testimonial-avatar {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      object-fit: cover;
+      flex: 0 0 48px;
+      background: #d7d6d0;
+    }
+
+    .testimonial-person-copy {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    .testimonials-page .testimonial-person strong {
+      font-size: 12px;
+    }
+
+    .testimonials-page .testimonial-person span {
+      font-size: 10px;
+      letter-spacing: .8px;
+      text-transform: uppercase;
+      opacity: .7;
+    }
+
+    @media (max-width: 560px) {
+      .testimonials-page .testimonial-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .testimonials-page .testimonial-card {
+        padding: 24px;
+      }
+    }
+  </style>
 </head>
-<body><header class="site-header"><a class="wordmark" href="index.html">TOMI<span>®</span></a><button class="menu-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation"><span></span><span></span></button><nav class="site-nav" id="site-nav"><a href="work/long-forms.html">Long-form</a><a href="work/short-forms.html">Short-form</a><a href="work/thumbnails.html">Thumbnails</a>
-      <a href="work/music-videos.html">Music videos / teasers</a><a class="active" href="testimonials.html">Testimonials</a><a href="about.html">About / CV</a><a class="nav-cta" href="index.html#contact">Let’s talk <span>↗</span></a></nav></header>
-<main class="page-main section-wrap"><p class="eyebrow">WORDS FROM THE PEOPLE I’VE WORKED WITH</p><h1 class="page-title">Good work.<br><span class="highlight">Real feedback.</span></h1><p class="lead page-lead">The best way to understand what working together is like is to hear it from clients.</p>
-<div class="testimonial-grid">
-  <article class="testimonial-card"><span class="quote-mark">“</span><p>Add an approved client testimonial here. Keep the wording exactly as the client gave permission to publish it.</p><div class="testimonial-person"><strong>Client name</strong><span>Project / service</span></div></article>
-  <article class="testimonial-card testimonial-card-blue"><span class="quote-mark">“</span><p>Add another approved testimonial here. A short, specific comment is more useful than generic praise.</p><div class="testimonial-person"><strong>Client name</strong><span>Project / service</span></div></article>
-  <article class="testimonial-card"><span class="quote-mark">“</span><p>Add a third testimonial here when available. You can also use a screenshot of written feedback with the client’s permission.</p><div class="testimonial-person"><strong>Client name</strong><span>Project / service</span></div></article>
-</div><div class="about-cta"><h2>Want to work together?</h2><a class="button button-dark" href="index.html#contact">Start a conversation ↗</a></div></main>
-<footer class="site-footer"><a class="wordmark" href="index.html">TOMI<span>®</span></a><p>Video editing & thumbnail design.</p><div class="social-links"><a href="https://www.instagram.com/tomi_tha_creator/" target="_blank" rel="noreferrer">Instagram ↗</a><a href="https://www.tiktok.com/@tomi_tha_creator" target="_blank" rel="noreferrer">TikTok ↗</a><a href="#" data-social-x>X ↗</a><a href="mailto:flamezvisual@gmail.com">Email ↗</a></div><span class="copyright">© <span data-year></span> TOMI. ALL RIGHTS RESERVED.</span></footer></body></html>
+
+<body>
+  <header class="site-header">
+    <a href="index.html" class="wordmark">TOMI<span>®</span></a>
+
+    <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+
+    <nav class="site-nav">
+      <a href="work/long-forms.html">Long Forms</a>
+      <a href="work/short-forms.html">Short Forms</a>
+      <a href="work/thumbnails.html">Thumbnails</a>
+      <a href="work/music-videos.html">Music Videos</a>
+      <a href="testimonials.html" class="active">Testimonials</a>
+      <a href="about.html">About</a>
+      <a href="about.html#contact" class="nav-cta">LET'S WORK <span>↗</span></a>
+    </nav>
+  </header>
+
+  <main class="page-main testimonials-page">
+    <p class="eyebrow"><span class="blue-dot"></span>CLIENT FEEDBACK / 04</p>
+    <h1 class="page-title">Words from<br><span class="outlined">the people.</span></h1>
+    <p class="lead page-lead">
+      A few words from creators and clients I've had the opportunity to work with.
+    </p>
+
+    <div class="portfolio-toolbar">
+      <span>4 CLIENT TESTIMONIALS</span>
+      <span>TRUST · COLLABORATION · RESULTS</span>
+    </div>
+
+    <section class="testimonial-grid" aria-label="Client testimonials">
+      <article class="testimonial-card">
+        <span class="quote-mark">“</span>
+        <p>I always speak to Tomisin when I have an idea I want to execute. He's really knowledgeable about YouTube and it's always great working with him!</p>
+        <div class="testimonial-person">
+          <img class="testimonial-avatar" src="https://storage.ytjobs.co/channel_thumbnails/GCFeBAC6P10OCQ8T7A9yTsPx8ErH1DqD0pPm6VeB.jpg" alt="Eyitemi Fadayomi" loading="lazy">
+          <div class="testimonial-person-copy">
+            <strong>Eyitemi Fadayomi</strong>
+            <span>Video editing</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="testimonial-card">
+        <span class="quote-mark">“</span>
+        <p>Working with him was so nice and he delivered swiftly with a well edited video. He has a good customer relation trait and perfect at what he do. BRAVO TOMII !!!</p>
+        <div class="testimonial-person">
+          <img class="testimonial-avatar" src="https://storage.ytjobs.co/channel_thumbnails/BpQ8putQCXXeWzFnknPitn2TfDj8Wi2sddid2yle.jpg" alt="Afolam" loading="lazy">
+          <div class="testimonial-person-copy">
+            <strong>Afolam</strong>
+            <span>Video editing</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="testimonial-card">
+        <span class="quote-mark">“</span>
+        <p>I hired Tomi to edit my YouTube videos and he delivered exactly what I needed. He understood the style from the first brief, kept the pacing tight, and the finished videos felt polished and easy to watch. Communication was clear, revisions were handled quickly, and everything arrived on time. I’d gladly work with him again and recommend him to any creator.</p>
+        <div class="testimonial-person">
+          <img class="testimonial-avatar" src="https://storage.ytjobs.co/channel_thumbnails/aNYgyzBCQ5KlyPwQO4aUs1gByYl4xUtf34tcZOgG.jpg" alt="Tomisin Odebiyi" loading="lazy">
+          <div class="testimonial-person-copy">
+            <strong>Tomisin Odebiyi</strong>
+            <span>Content planning · Shooting · Directing · Editing</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="testimonial-card">
+        <span class="quote-mark">“</span>
+        <p>Working with TOMI was a fantastic experience. he took my raw footage and turned it into a fast-paced, high-engagement video that matched my brand perfectly. Communication was smooth, delivery was fast, and he handled revisions without any hassle. Highly recommend!</p>
+        <div class="testimonial-person">
+          <img class="testimonial-avatar" src="https://yt3.googleusercontent.com/oYFvL1nxwXgjA00zMUncCjc9lMbNyO3L56IF7PKwkb_p1uCRRvCSkAbLN0Zb0xN4D79hgpXckA0=s160-c-k-c0x00ffffff-no-rj" alt="Scofi" loading="lazy">
+          <div class="testimonial-person-copy">
+            <strong>Scofi</strong>
+            <span>Video editing</span>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <div class="about-cta">
+      <h2>Want to work together?</h2>
+      <a href="about.html#contact" class="button button-dark">LET'S TALK <span>↗</span></a>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <a href="index.html" class="wordmark">TOMI<span>®</span></a>
+    <p>Creative work, made with intention.</p>
+    <div class="social-links">
+      <a href="https://www.instagram.com/tomi_tha_creator/" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
+      <a href="https://www.tiktok.com/@tomi_tha_creator" target="_blank" rel="noopener noreferrer">TikTok ↗</a>
+      <a href="mailto:flamezvisual@gmail.com">Email ↗</a>
+    </div>
+    <div class="copyright">© 2026 TOMI THA CREATOR. ALL RIGHTS RESERVED.</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
